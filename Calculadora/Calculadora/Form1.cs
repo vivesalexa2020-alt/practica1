@@ -1,11 +1,11 @@
 using Calculadora.Vista;
 using System;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+//using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Calculadora
 {
-    public partial class Form1 : Form, ICalculadoraVista
+    public partial class Form1 : Form //ICalculadoraVista
     {
         public Form1()
         {
