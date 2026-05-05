@@ -28,17 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            SuspendLayout();
+            this.SuspendLayout();
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Name = "Form1";
-            Text = "Form1";
-            Load += Form1_Load;
-            ResumeLayout(false);
+            this.ClientSize = new Size(727, 363);
+            this.Name = "Form1";
+            this.ResumeLayout(false);
+            //SuspendLayout();
+            // 
+            // Form1
+            // 
+            //AutoScaleDimensions = new SizeF(8F, 20F);
+            //AutoScaleMode = AutoScaleMode.Font;
+            //ClientSize = new Size(800, 450);
+            //Name = "Form1";
+            //Text = "Form1";
+            //Load += Form1_Load;
+            // ResumeLayout(false);
         }
 
         #endregion
