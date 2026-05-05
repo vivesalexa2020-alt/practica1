@@ -28,13 +28,55 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            label1 = new Label();
+            button1 = new Button();
+            SuspendLayout();
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(196, 40);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(296, 27);
+            textBox1.TabIndex = 0;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(196, 102);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(296, 27);
+            textBox2.TabIndex = 1;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(314, 235);
+            label1.Name = "label1";
+            label1.Size = new Size(50, 20);
+            label1.TabIndex = 2;
+            label1.Text = "label1";
+            // 
+            // button1
+            // 
+            button1.Location = new Point(256, 163);
+            button1.Name = "button1";
+            button1.Size = new Size(151, 29);
+            button1.TabIndex = 3;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            this.ClientSize = new Size(727, 363);
-            this.Name = "Form1";
-            this.ResumeLayout(false);
+            ClientSize = new Size(727, 363);
+            Controls.Add(button1);
+            Controls.Add(label1);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
+            Name = "Form1";
+            Load += Form1_Load_1;
+            ResumeLayout(false);
+            PerformLayout();
             //SuspendLayout();
             // 
             // Form1
@@ -49,5 +91,10 @@
         }
 
         #endregion
+
+        private TextBox textBox1;
+        private TextBox textBox2;
+        private Label label1;
+        private Button button1;
     }
 }

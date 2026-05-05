@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Calculadora.Models
+namespace Calculadora.Modelo
 {
     public class CalculadoraModelo
     {
