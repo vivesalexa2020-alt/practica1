@@ -32,6 +32,8 @@
             textBox2 = new TextBox();
             label1 = new Label();
             button1 = new Button();
+            label2 = new Label();
+            label3 = new Label();
             SuspendLayout();
             // 
             // textBox1
@@ -50,12 +52,11 @@
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(314, 235);
+            label1.Location = new Point(225, 226);
             label1.Name = "label1";
-            label1.Size = new Size(50, 20);
+            label1.Size = new Size(166, 30);
             label1.TabIndex = 2;
-            label1.Text = "label1";
+            label1.Text = "Resultado: 0";
             // 
             // button1
             // 
@@ -63,12 +64,33 @@
             button1.Name = "button1";
             button1.Size = new Size(151, 29);
             button1.TabIndex = 3;
-            button1.Text = "button1";
+            button1.Text = "Calcular";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(101, 47);
+            label2.Name = "label2";
+            label2.Size = new Size(75, 20);
+            label2.TabIndex = 4;
+            label2.Text = "Numero 1";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(101, 109);
+            label3.Name = "label3";
+            label3.Size = new Size(75, 20);
+            label3.TabIndex = 5;
+            label3.Text = "Numero 2";
             // 
             // Form1
             // 
             ClientSize = new Size(727, 363);
+            Controls.Add(label3);
+            Controls.Add(label2);
             Controls.Add(button1);
             Controls.Add(label1);
             Controls.Add(textBox2);
@@ -96,5 +118,7 @@
         private TextBox textBox2;
         private Label label1;
         private Button button1;
+        private Label label2;
+        private Label label3;
     }
 }
