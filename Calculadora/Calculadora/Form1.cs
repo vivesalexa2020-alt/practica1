@@ -11,7 +11,7 @@ namespace Calculadora
         {
             InitializeComponent();
 
-            buttonCalcular.Click += (sender, e) =>
+            button1.Click += (sender, e) =>
             {
                 CalcularClicked?.Invoke(sender, e);
             };
@@ -29,25 +29,6 @@ namespace Calculadora
 
         }
 
-        public string Numero1
-        {
-            get => textBox1.Text;
-            set => textBox1.Text = value;
-        }
-
-        public string Numero2
-        {
-            get => textBox2.Text;
-            set => textBox2.Text = value;
-        }
-
-        public string Resultado
-        {
-            get => labelResultado.Text;
-            set => labelResultado.Text = value;
-        }
-
         public event EventHandler CalcularClicked;
     }
-}
 }
